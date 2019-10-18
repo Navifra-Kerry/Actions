@@ -14,4 +14,4 @@ jobs:
       uses: warrenbuckley/Setup-MSBuild@v1
 
     - name: Build
-      run: MSBuild Actions/Actions/Actions.vcxproj
+      run: MSBuild Actions/Actions.vcxproj
