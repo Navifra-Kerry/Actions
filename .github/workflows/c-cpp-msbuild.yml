@@ -9,6 +9,9 @@ jobs:
     
     steps:
     - uses: actions/checkout@master
+    
+    - name: Setup MSBuild.exe
+      uses: warrenbuckley/Setup-MSBuild@v1
 
-    - name: MSBuild
-      run: MSBuild Actions/Actions/Actions.sln
+    - name: Build
+      run: MSBuild Actions/Actions/Actions.vcxproj
