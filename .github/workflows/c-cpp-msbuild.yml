@@ -16,5 +16,5 @@ jobs:
     - name: Build
       run: MSBuild Actions/Actions.vcxproj
       
-    - name: Excute
-      run: Actions/Debug/Actions.exe
+    #- name: test
+    #  run: boostunitest
