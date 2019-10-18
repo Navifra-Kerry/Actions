@@ -1,0 +1,14 @@
+name: C/C++ CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@master
+
+    - name: MSBuild
+      run: MSBuild Actions/Actions/Actions.sln
