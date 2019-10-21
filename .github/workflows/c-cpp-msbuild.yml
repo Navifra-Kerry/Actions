@@ -14,7 +14,7 @@ jobs:
       uses: warrenbuckley/Setup-MSBuild@v1
 
     - name: Build
-      run: MSBuild /t:BuildAll Actions/Actions.sln
+      run: MSBuild Actions/Actions.sln
       
     #- name: test
     #  run: boostunitest
